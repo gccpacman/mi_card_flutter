@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.white,
         body: SafeArea(
-          child: Column(
+          child: Row(
             verticalDirection: VerticalDirection.down,
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.end,
@@ -22,17 +22,19 @@ class MyApp extends StatelessWidget {
             children: <Widget>[
               Icon(Icons.star),
               Icon(Icons.star),
+              SizedBox(width: 30.0),
               Icon(Icons.star),
               Container(
-                width: 100.0,
+                width: 30.0,
                 height: 100.0,
                 color: Colors.red,
                 child: Icon(Icons.star, color: Colors.white,),
               ),
               Container(
-                width: 200.0,
+                width: 100.0,
                 height: 100.0,
                 color: Colors.yellow,
+                child: Icon(Icons.star, color: Colors.blue,),
               )
             ],
           )
