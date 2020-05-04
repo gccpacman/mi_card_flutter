@@ -50,48 +50,37 @@ class MyApp extends StatelessWidget {
                   )),
               SizedBox(
                 height: 20.0,
-              ),
-              Card(
-                margin: EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
-                color: Colors.white,
-                child: Padding(
-                    padding: EdgeInsets.all(20.0),
-                    child: Row(
-                      children: <Widget>[
-                        Icon(Icons.phone, color: Colors.teal),
-                        SizedBox(
-                          width: 10.0,
-                        ),
-                        Text(
-                          '505-842-5662',
-                          style: TextStyle(
-                              color: Colors.teal,
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold),
-                        )
-                      ],
-                    )),
+                width: 200.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
               ),
               Card(
                   margin: EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
                   color: Colors.white,
                   child: Padding(
-                      padding: EdgeInsets.all(20.0),
-                      child: Row(
-                        children: <Widget>[
-                          Icon(Icons.email, color: Colors.teal),
-                          SizedBox(
-                            width: 10.0,
-                          ),
-                          Text(
-                            'bettercallsaul@gmail.com',
-                            style: TextStyle(
-                                color: Colors.teal,
-                                fontSize: 20.0,
-                                fontWeight: FontWeight.bold),
-                          )
-                        ],
-                      )))
+                      padding: EdgeInsets.all(10.0),
+                      child: ListTile(
+                          leading: Icon(Icons.phone, color: Colors.teal),
+                          title: Text('505-842-5662',
+                              style: TextStyle(
+                                  color: Colors.teal,
+                                  fontSize: 15.0,
+                                  fontWeight: FontWeight.bold
+                              ))))),
+              Card(
+                  margin: EdgeInsets.symmetric(horizontal: 20.0, vertical: 5.0),
+                  color: Colors.white,
+                  child: Padding(
+                      padding: EdgeInsets.all(10.0),
+                      child: ListTile(
+                        leading: Icon(Icons.email, color: Colors.teal),
+                        title: Text('bettercallsaul@gmail.com',
+                          style: TextStyle(
+                              color: Colors.teal,
+                              fontSize: 15.0,
+                              fontWeight: FontWeight.bold
+                          )))))
             ],
           ),
 //              Container(
