@@ -17,34 +17,54 @@ class MyApp extends StatelessWidget {
           child: Row(
 //            verticalDirection: VerticalDirection.down,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
 //            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Container(
                 color: Colors.red,
-                width: 100.0,
+                width: 30.0,
                 child: Icon(Icons.add, )
               ),
-              Container(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Container(
-                        color: Colors.yellow,
-                        width: 100.0,
-                        height: 100.0,
-                      ),
-                      Container(
-                        color: Colors.green,
-                        width: 100.0,
-                        height: 100.0,
-                      ),
-                    ],
+              Column(
+                children: <Widget>[
+                  CircleAvatar(
+                    radius: 50.0,
+                    backgroundImage: AssetImage('images/saul.jpeg'),
+                    backgroundColor: Colors.blue,
+                  ),
+                  Text(
+                    'Saul Goodman',
+                    style: TextStyle(
+                      fontSize: 40,
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Pacifico',
+                      color: Colors.yellow
+                    )
+                  ),
+                  Text(
+                    'Justice matters most!',
+                    style: TextStyle(
+                      fontFamily: 'Cascadia',
+                      color: Colors.white,
+                      fontSize: 20.0,
+                      letterSpacing: 2.0,
+                    )
+                  ),
+                  Container(
+                    child: Row(
+                      children: <Widget>[
+                        Icon(
+
+                        )
+                      ],
+                    )
                   )
+                ],
+                mainAxisAlignment: MainAxisAlignment.center,
               ),
               Container(
                 color: Colors.blue,
-                width: 100.0,
+                width: 30.0,
                 child: Icon(Icons.star, color: Colors.black,),
               )
             ],
